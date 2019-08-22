@@ -12,5 +12,8 @@
             "email": "fabian.montero@apscreativas.com"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "autoload": {
+        "classmap": ["src"]
+      }
 }
