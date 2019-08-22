@@ -1,0 +1,16 @@
+{
+    "name": "apscreativas/oxxopay",
+    "description": "OXXO Pay Package for Laravel",
+    "type": "laravel",
+    "require": {
+        "conekta/conekta-php": "4.0.4"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fabian Montero",
+            "email": "fabian.montero@apscreativas.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
