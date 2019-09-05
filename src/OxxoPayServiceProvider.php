@@ -30,7 +30,10 @@ class OxxoPayServiceProvider extends ServiceProvider
         $this->loadRoutesFrom(__DIR__ . '/routes/webhooks.php');
 
         $this->publishes([
-            __DIR__ . '/config/oxxopay.php' => config_path('oxxopay.php')
+            __DIR__ . '/config/oxxopay.php' => config_path('oxxopay.php'),
+            __DIR__ . '/migrations/2019_08_28_161440_add_oxxopay_to_users.php' => database_path('/migrations/2019_08_28_161440_add_oxxopay_to_users.php'),
+            __DIR__ . '/migrations/2019_08_28_183530_create_orders_table.php' => database_path('/migrations/2019_08_28_183530_create_orders_table.php'),
+
         ], 'oxxopay');
     }
 }
