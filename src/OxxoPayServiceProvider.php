@@ -25,6 +25,11 @@ class OxxoPayServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        require __DIR__ . '/routes/routes.php';
+        require __DIR__ . '/functions/functions.php';
+        require __DIR__ . '/routes/webhooks.php';
+
+        $this->publishes([
+            __DIR__ . '/config/oxxopay.php' => config_path('oxxopay.php')
+        ], 'oxxopay');
     }
 }
